@@ -1,4 +1,6 @@
-﻿namespace COMP003A.Lecture.Activity3
+﻿using System.Net.Http.Headers;
+
+namespace COMP003A.Lecture.Activity3
 {
     internal class Program
     {
@@ -57,6 +59,30 @@
             }
 
             Console.WriteLine();
+
+            Console.WriteLine("Section C: Semester Code lookup");
+
+            Console.WriteLine("Enter a semester code (SP, SU, FA): ");
+            string semesterCode = Console.ReadLine();
+
+            switch (semesterCode)
+            {
+                case "SP":
+                    Console.WriteLine("Spring");
+                    break;
+
+                case "SU":
+                    Console.WriteLine("Summer");
+                    break;
+
+                case "FA":
+                    Console.WriteLine("Fall");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid semester code");
+                    break;
+            }
 
 
            
